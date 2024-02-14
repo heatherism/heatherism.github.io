@@ -3,6 +3,7 @@ import bioPhoto from "../assets/bio-photo.JPG";
 import { Link } from 'react-scroll'; 
 import ProjectModal from './ProjectModal';
 import FloatingElements from './FloatingElements';
+import LetsChatButton from './LetsChatButton';
 
 function About() {
 
@@ -26,6 +27,9 @@ function About() {
             View My Work
           </Link>
           {/* Update the href to link to your resume or contact section */}
+          <div className="absolute top-0 right-0 mt-4 mr-4">
+            <LetsChatButton />
+          </div>
         </header>
       );
       

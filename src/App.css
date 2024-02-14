@@ -64,13 +64,14 @@
   width: 150px;
   height: 150px;
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
   /* animation-name: float;
   animation-duration: var(--animation-duration, 6s);  */
   animation-timing-function: ease-in-out; 
   animation-iteration-count: infinite;
   text-decoration: none; /* Remove underline from links */
+  z-index: 1024;
 }
 
 .bubble.float1 {animation: float1 6s infinite ease-in-out; }
