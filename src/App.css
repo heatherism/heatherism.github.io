@@ -182,3 +182,60 @@
     font-size: 3rem; /* Larger screens */
   }
 }
+
+.project-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1050;
+}
+
+.project-modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.project-modal-header {
+  font-size: 28px; /* Increase font size */
+  font-weight: 700; /* Increase font weight for boldness */
+  margin-bottom: 20px;
+}
+
+.project-modal-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project-modal-details {
+  margin-bottom: 20px;
+}
+
+.project-modal-link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.project-modal-close-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

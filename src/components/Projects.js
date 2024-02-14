@@ -19,33 +19,45 @@ function Projects() {
     const projects = [
         {
           name: "EasyOrder",
-          description: "Spring Boot Based Web Application",
+          description: "Feature-rich Spring Boot backend and React frontend for seamless menu exploration, ordering, and checkout processes.",
+          overview: "Spring Boot Based Web Application",
           image: projectImage1,
-          link: "#", // Link to project
+          technologies: "Amazon Web Services (AWS), Spring Security, Spring Boot, React.js, Docker, PostgreSQL, Hibernate",
+          features: "CRUD REST APIs, Spring Data JDBC, session-based authentication, React with Ant Design, Docker containerization, AWS deployment",
         },
         {
           name: "&Share",
-          description: "Cloud and React Based Social Network",
-          image: projectImage2,
-          link: "#",
+          overview: "Cloud and React Based Social Network",
+          description: "Project Overview: A React-based social networking platform enabling multimedia interaction and content management.",
+          technologies: "Elasticsearch, Go, User Authentication, JSON Web Token (JWT), Responsive Web Design, React.js, Google App Engine",
+          features: "React Router v4, JSON Web Tokens (JWT), Go backend, Google App Engine deployment, ElasticSearch, Google Cloud Storage, Advanced search functionality, user-friendly UI components, Google Cloud services integration",
+          challenges: "Integrating various Google Cloud services, ensuring seamless user authentication and content management.",
+          image: projectImage2,          
         },
         {
           name: "miniChat",
-          description: "Web Based AI Agent for PDF Queries",
+          overview: "Web Based AI Agent for PDF Queries",
+          description: "React-based conversational UI for real-time interaction with PDF documents, integrating OpenAI's GPT-3.5 Turbo API.",
+          technologies: "React.js, Express.js, Node.js, OpenAI's GPT-3.5 Turbo API, Langchain, Text-to-Speech (TTS), Voice Recognition",
+          features: "RESTful APIs for efficient request handling, in-memory vector store for caching, integration of GPT-3.5 Turbo API for AI-driven interactions, text and voice-based user interactions",
           image: projectImage3,
-          link: "#",
+ 
         },
         {
           name: "GrooveHub",
-          description: "Kotlin Android App",
+          overview: "Kotlin Android App",
+          description: "Android music streaming app developed using Kotlin, featuring the Android Jetpack Library and Hilt Dependency Injection.",
+          technologies: "Kotlin, Android Jetpack, Hilt Dependency Injection, Retrofit, MVVM Architecture",
+          features: "Utilization of Kotlin and the Android Jetpack Library, implementation of Hilt for dependency injection, use of Retrofit for network communication, modern UI with Jetpack Compose, navigation management with the Jetpack Navigation component",
           image: projectImage4,
-          link: "#",
         },
         {
           name: "TripPlanner",
-          description: "Go and Google Maps API-Based Application",
+          overview: "Go and Google Maps API-Based Application",
+          description: "Collaboration in the development of TripPlanner, a trip planning application utilizing Go for backend logic and Google Maps API for mapping features.",
+          technologies: "Go, PostgreSQL, JSON Web Token (JWT), Google Maps API, RESTful API design",
+          features: "Backend development with Go, PostgreSQL database schema design, JWT-based secure operations, Google Maps API integration for dynamic mapping and route planning, collaborative team development from concept to deployment",
           image: groupProjectImage,
-          link: "#",
         }
       ];
     
@@ -59,7 +71,7 @@ function Projects() {
                   <img src={project.image} alt={project.name} className="w-full h-56 object-cover object-center"/>
                   <div className="p-4">
                     <h3 className="font-bold text-xl mb-2">{project.name}</h3>
-                    <p className="text-gray-600">{project.description}</p>
+                    <p className="text-gray-600">{project.overview}</p>
                     <button onClick={() => openModal(project)} className="mt-4 bg-blue-500 text-white px-6 py-2 rounded-lg">
                       View Project
                     </button>
