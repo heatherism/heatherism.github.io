@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ProjectModal from './components/ProjectModal';
+import Story from './components/Story';
+import FloatingElements from './components/FloatingElements';
+import FloatingBubbles from './components/FloatingBubbles';
+import ScrollToTop from './components/ScrollToTop';
+
+
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        
+        <FloatingBubbles />
+        <About />
+
+        <Projects />
+        {/* <Skills /> */}
+        <Story />
+        <Contact />
+        <ScrollToTop />
+      </div>
+    </BrowserRouter>  
   );
 }
 
