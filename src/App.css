@@ -132,3 +132,53 @@
   z-index: 1000;
 }
 
+/* .blur-effect {
+  filter: blur(8px);
+} */
+
+.project-modal-content {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 28px;
+  position: relative;
+  width: 80%; /* Or a specific width like 600px */
+  max-width: 900px; /* Adjust based on your preference */
+  max-height: 70vh; /* Prevent it from being too tall */
+  overflow-y: auto; /* Allows scrolling within the modal if content is long */
+  z-index: 1050; /* Ensures it's above everything else */
+  margin: auto; /* Centers the modal vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 5rem 1rem; /* Default smaller padding */
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 10rem 2rem; /* Medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 20rem 4rem; /* Larger screens */
+  }
+}
+
+.header h1 {
+  font-size: 1.5rem; /* Default */
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 2rem; /* Medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .header h1 {
+    font-size: 3rem; /* Larger screens */
+  }
+}

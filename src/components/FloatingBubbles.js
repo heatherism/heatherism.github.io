@@ -5,7 +5,10 @@ import ResumeModal from './ResumeModal';
 
 const FloatingBubbles = () => {
   const [isResumeOpen, setIsResumeOpen] = useState(false);
-  const toggleResumeModal = () => setIsResumeOpen(!isResumeOpen);
+  const toggleResumeModal = () => {
+    console.log('Toggling Resume Modal'); //debugging line
+    setIsResumeOpen(!isResumeOpen);
+  };
 
 
   return (
@@ -25,8 +28,8 @@ const FloatingBubbles = () => {
         My Projects
       </Link>
 
-      <div className="bubble float1" onClick={toggleResumeModal} style={{ right: '20%', top: '60%', position: 'absolute' }}>
-        View Rsume
+      <div className="bubble float1" onClick={toggleResumeModal} style={{ right: '15%', top: '55%', position: 'absolute' }}>
+        View Resume
       </div>
 
       <ResumeModal isOpen={isResumeOpen} onClose={toggleResumeModal} />

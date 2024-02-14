@@ -3,6 +3,7 @@ import React from 'react';
 import resumePDF from '../assets/Resume.pdf';
 
 const ResumeModal = ({ isOpen, onClose }) => {
+    console.log('ResumeModal isOpen:', isOpen);
   if (!isOpen) return null;
 
   return (
