@@ -15,7 +15,7 @@ const FloatingBubbles = () => {
     <>
       {/* Bubble for the Contact section */}
       <Link to="contact" className="bubble float1" smooth={true} duration={500} style={{ left: '15%', top: '40%', position: 'absolute' }}>
-        Contact Me
+        Contact
       </Link>
 
       {/* Bubble for the My Journey section */}
@@ -29,7 +29,7 @@ const FloatingBubbles = () => {
       </Link>
 
       <div className="bubble float1" onClick={toggleResumeModal} style={{ right: '15%', top: '55%', position: 'absolute' }}>
-        View Resume
+        Download CV
       </div>
 
       <ResumeModal isOpen={isResumeOpen} onClose={toggleResumeModal} />

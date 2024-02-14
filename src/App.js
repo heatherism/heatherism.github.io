@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import About from './components/About';
 import Projects from './components/Projects';
-import Skills from './components/Skills';
+import Skills from './components/Skill';
 import Contact from './components/Contact';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -11,6 +11,8 @@ import Story from './components/Story';
 import FloatingElements from './components/FloatingElements';
 import FloatingBubbles from './components/FloatingBubbles';
 import ScrollToTop from './components/ScrollToTop';
+import SkillsSection from './components/SkillsSection';
+
 
 
 import './App.css';
@@ -29,9 +31,7 @@ function App() {
         
         <FloatingBubbles />
         <About />
-
         <Projects />
-        {/* <Skills /> */}
         <Story />
         <Contact />
         <ScrollToTop />

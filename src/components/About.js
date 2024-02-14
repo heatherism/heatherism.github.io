@@ -14,25 +14,21 @@ function About() {
           {/* <FloatingElements /> */}
           <img src={bioPhoto} alt="Tong Hong" className="mx-auto rounded-full w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 object-cover" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" /> 
             
-          <h1 className="text-3xl font-bold mt-8 mb-4 md:mb-6" data-aos="fade-right">Hi, I'm Tong Hong</h1>
-          <p className="text-xl text-gray-600 mb-6" data-aos="fade-left" style={{pointerEvents: "none"}}>I'm a passionate full stack software developer. <br />I love creating beautiful and functional web experiences that make a difference.</p>
+          <h1 className="text-3xl font-bold mt-8 mb-4 md:mb-6" data-aos="fade-right">
+            Hi, I'm Tong Hong
+          </h1>
+          <p className="text-xl text-gray-600 mb-6" data-aos="fade-left" style={{pointerEvents: "none"}}>
+            <span className="text-blue-350 text-2xl">A Full-Stack Software Developer from Bay Area, California</span>. <br /> 
+            
+            I love creating beautiful and functional web experiences that make a difference.
+          </p>
           <Link to="projects" smooth={true} duration={500} className="inline-block bg-blue-500 text-white px-6 py-3 rounded-lg mt-4 cursor-pointer">
             View My Work
           </Link>
           {/* Update the href to link to your resume or contact section */}
         </header>
       );
-    // return (
-    //     <div className="relative min-h-screen bg-cover bg-center" style={{ backgroundImage: `url(${bioPhoto})` }}>
-    //       <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Overlay */}
-    //       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-    //         <h1 className="text-white text-4xl font-bold mb-2">Hi, I'm Tong Hong</h1>
-    //         <p className="text-white text-xl">
-    //           I'm a passionate full-stack developer.
-    //         </p>
-    //       </div>
-    //     </div>
-    //   );        
+      
 }
 
 export default About;
