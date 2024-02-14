@@ -31,8 +31,9 @@ function App() {
         
         <FloatingBubbles />
         <About />
-        <Projects />
         <Story />
+        <Projects />
+        
         <Contact />
         <ScrollToTop />
       </div>

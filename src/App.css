@@ -104,7 +104,7 @@
   background-color: #fff; /* Ensure contrast against the bg-blue-100 */
   margin: 2rem; /* Adjust based on your layout preferences */
   padding: 2rem; /* Provides space inside the frame */
-  border-radius: 80px; /* Soft rounded corners for the frame */
+  border-radius: 60px; /* Soft rounded corners for the frame */
   box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
@@ -212,7 +212,7 @@
 }
 
 .project-modal-image {
-  width: 100%;
+  width: 90%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -240,3 +240,156 @@
   border: none;
   border-radius: 5px;
 }
+
+/* define the animation - glittering css style hot pink*/
+/* @keyframes glitter {
+  0%, 100% {
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+  }
+  50% {
+    color: #ff00ff;
+    text-shadow: 0 0 20px #ffe9e9, 0 0 30px #ff007f, 0 0 40px #ff007f, 0 0 50px #ff007f, 0 0 60px #ff007f, 0 0 70px #ff007f, 0 0 80px #ff007f;
+  }
+}
+
+.glittering-text {
+  animation: glitter 2s linear infinite;
+} */
+
+@keyframes glitter {
+  0%, 100% {
+    color: #E0FFFF; /* Light Cyan, similar to baby blue */
+    text-shadow: 
+      0 0 5px #E0FFFF, 
+      0 0 10px #ADD8E6, /* Light Blue */
+      0 0 15px #87CEFA, /* Light Sky Blue */
+      0 0 20px #B0E0E6; /* Powder Blue */
+  }
+  50% {
+    color: #ADD8E6; /* Light Blue */
+    text-shadow: 
+      0 0 10px #E0FFFF, 
+      0 0 15px #87CEFA, /* Light Sky Blue */
+      0 0 20px #B0E0E6, /* Powder Blue */
+      0 0 25px #87CEEB; /* Sky Blue */
+  }
+}
+
+.glittering-text {
+  animation: glitter 4s linear infinite;
+}
+
+/* heartbeat effect */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.pulse-button {
+  animation: pulse 2s infinite;
+  /* Button styles */
+  background-color: #007bff; /* Example color: pink */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.pulse-button:hover {
+  background-color: #ff6eb4; /* Darker pink on hover */
+}
+
+
+/* bounce effect */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.bounce-button {
+  animation: bounce 2s infinite;
+  /* Button styles */
+  background-color: #4CAF50; /* Example color: green */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s;
+}
+
+.bounce-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+/* shimmer effect */
+.shimmer-text {
+  position: relative;
+  color: #212121; /* Dark text color for contrast */
+  background-color: #ffffff; /* Assuming a white background */
+  overflow: hidden;
+}
+
+.shimmer-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 25%, /* Light shimmer */
+    rgba(255, 255, 255, 0.8) 50%, /* Brighter center */
+    rgba(255, 255, 255, 0.5) 75%, /* Light shimmer */
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 3s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+
+
+/* shadow box frame */
+.shadow-box-frame {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border: 4px solid #add8e6; /* White border for contrast */
+  border-radius: 50%; /* Circular photo */
+  display: inline-block;
+  margin: 20px; /* Adjust spacing around the frame */
+}
+
+/* Apply this class to your img tag */
