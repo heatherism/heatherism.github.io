@@ -3,7 +3,7 @@ import profilePhoto from '../assets/profilephoto.jpeg';
 
 const Story = () => {
   return (
-    <section id="story" className="bg-blue-100 py-12">
+    <section id="story" className="bg-blue-100 glitter-bg py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="story-frame shadow-lg border border-gray-200 rounded-lg overflow-hidden p-6 md:p-8 flex flex-col md:flex-row items-center">
           {/* Profile Photo */}

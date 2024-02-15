@@ -9,11 +9,14 @@ function About() {
 
 
     return (
-        <header className="text-center bg-blue-100 header">
+        <header className="text-center bg-blue-100 glitter-bg header">
 
           
           {/* <FloatingElements /> */}
-          <img src={bioPhoto} alt="Tong Hong" className="shadow-box-frame mx-auto rounded-full w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 object-cover" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" /> 
+          <div className="bio-photo-container mx-auto relative inline-block"> {/* Container for the photo and bubble */}
+            <img src={bioPhoto} alt="Tong Hong" className="shadow-box-frame rounded-full w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 object-cover" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" />
+            <div className="greeting-bubble absolute hidden">Hi there!</div> {/* Greeting bubble */}
+         </div>
             
           <h1 className="text-3xl font-bold mt-8 mb-4 md:mb-6" data-aos="fade-right">
             Hi, I'm Tong Hong
@@ -27,7 +30,7 @@ function About() {
             View My Work
           </Link>
           {/* Update the href to link to your resume or contact section */}
-          <div className="absolute top-0 right-0 mt-4 mr-4 ">
+          <div className="absolute top-0 right-0 mt-4 mr-4 rotating">
             <LetsChatButton />
           </div>
         </header>

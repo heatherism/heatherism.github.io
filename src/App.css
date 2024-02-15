@@ -41,16 +41,14 @@
   0%, 100% {
     transform: translateY(0);
   }
-  50% {
-    transform: translateY(-20px);
-  }
+  25% { transform: translate(-20px, -25px); }
+  50% { transform: translate(20px, -30px); }
+  75% { transform: translate(-25px, -25px); }
 }
 
-/* .floating-element {
-  z-index: -1;
+.floating {
   animation: float 6s ease-in-out infinite;
-  display: inline-block;
-} */
+}
 
 
 /* Add to your CSS file */
@@ -64,7 +62,9 @@
   width: 150px;
   height: 150px;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
   cursor: pointer;
   /* animation-name: float;
   animation-duration: var(--animation-duration, 6s);  */
@@ -100,6 +100,13 @@
   75% { transform: translate(10px, -20px); }
 }
 
+.bubble:hover span {
+  display: inline-block;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
 .story-frame {
   background-color: #fff; /* Ensure contrast against the bg-blue-100 */
   margin: 2rem; /* Adjust based on your layout preferences */
@@ -132,10 +139,6 @@
   font-size: 24px;
   z-index: 1000;
 }
-
-/* .blur-effect {
-  filter: blur(8px);
-} */
 
 .project-modal-content {
   background-color: #fff;
@@ -392,4 +395,112 @@
   margin: 20px; /* Adjust spacing around the frame */
 }
 
-/* Apply this class to your img tag */
+.rotating:hover {
+  transform: rotate(5deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* glitter background */
+@keyframes glitterBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.glitter-bg {
+  animation: glitterBackground 30s ease infinite;
+  background: linear-gradient(270deg, #b6d0e2, #89abd9, #b6d0e2, #89abd9);
+  background-size: 400% 400%;
+}
+
+/* glow effect */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 8px rgba(173, 216, 230, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(173, 216, 230, 1);
+  }
+}
+
+.bubble {
+  /* Existing styles */
+  animation: glow 3s infinite ease-in-out;
+}
+
+.bubble:hover {
+  background-color: #87CEFA; /* A slightly different shade for hover */
+  border: 2px solid #ffffff; /* White border for contrast */
+}
+
+/*contact icons*/
+.contact-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icon {
+  margin: 10px;
+  color: #0077B5; /* LinkedIn blue color; adjust as needed */
+  text-decoration: none;
+  font-size: 24px; /* Adjust icon size as needed */
+}
+
+.contact-icon:hover {
+  color: #005691; /* Darker LinkedIn color for hover effect */
+}
+
+
+.bio-photo-container {
+  display: inline-block;
+  position: relative;
+}
+
+.greeting-bubble {
+  position: absolute;
+  bottom: 70%;
+  left: 70%;
+  transform: translateX(-50%) translateY(-10px); /* Adjust for visual appeal */
+  background-color: #ff6eb4; /* Light blue background */
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+
+  display: none; /* Hidden initially */
+  white-space: nowrap;
+}
+
+.bio-photo-container:hover .greeting-bubble {
+  display: block; /* Show the greeting bubble on hover */
+}
+
+/*project-container*/
+.project-container {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform property */
+  display: inline-block; /* or as per your layout */
+  margin: 0.5rem; /* or as per your layout */
+  /* your existing styles */
+}
+
+.project-container:hover {
+  transform: scale(1.10); /* Slightly increase the size */
+  z-index: 10; /* Ensure the hovered item is above others if they overlap */
+}
+
+.project-container img {
+  width: 100%; /* Maintain full width */
+  height: 150px; /* Adjust height as needed to make image appear smaller */
+  object-fit: cover; /* Cover the container without losing aspect ratio */
+}

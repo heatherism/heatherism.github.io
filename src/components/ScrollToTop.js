@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
   return (
     isVisible && (
-      <div className="scroll-to-top " onClick={scrollToTop}>
+      <div className="scroll-to-top" onClick={scrollToTop}>
         &#8679;
       </div>
     )

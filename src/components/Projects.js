@@ -61,12 +61,12 @@ function Projects() {
       ];
     
       return (
-        <section id="projects" className="bg-blue-100 py-12">
+        <section id="projects" className="bg-blue-100 glitter-bg py-12">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-8" data-aos="fade-up" >My Projects</h2>
+            <h2 className="text-4xl font-bold text-center mb-8" data-aos="fade-up" >My Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" data-aos="fade-up" data-aos-delay="200">
               {projects.map((project, index) => (
-                <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div key={index} className="bg-white shadow-lg rounded-lg overflow-hidden project-container">
                   <img src={project.image} alt={project.name} className="w-full h-56 object-cover object-center"/>
                   <div className="p-4">
                     <h3 className="font-bold text-xl mb-2">{project.name}</h3>
