@@ -6,6 +6,7 @@ import projectImage4 from '../assets/groovehub - home.png';
 import projectImage3 from '../assets/miniChat - real-time PDF interaction.png';
 import groupProjectImage from '../assets/groupProjectImage.png'
 import ProjectModal from './ProjectModal';
+import PortfolioImage from '../assets/3d portfolio website.png'
 
 function Projects() {
     const[isModalOpen, setIsModalOpen] = useState(false);
@@ -57,6 +58,14 @@ function Projects() {
           technologies: "Go, PostgreSQL, JSON Web Token (JWT), Google Maps API, RESTful API design",
           features: "Backend development with Go, PostgreSQL database schema design, JWT-based secure operations, Google Maps API integration, collaborative team development",
           image: groupProjectImage,
+        },
+        {
+          name: "3D Portfolio",
+          overview: "3D portfolio website with interactive elements using Three.js and vite",
+          description: "3D website using Vite for project setup and Three.js for rendering immersive 3D graphics and animations.",
+          technologies: "Vite, Three.js",
+          features: "Vite for project setup and development environment, Three.js for dynamic 3D scenes",
+          image: PortfolioImage,
         }
       ];
     
