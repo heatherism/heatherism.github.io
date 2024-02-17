@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.0df84058.css",
-    "main.js": "/static/js/main.76efcddc.js",
+    "main.css": "/static/css/main.b9634491.css",
+    "main.js": "/static/js/main.73118324.js",
     "static/js/592.9525cf69.chunk.js": "/static/js/592.9525cf69.chunk.js",
+    "static/media/3d portfolio website.png": "/static/media/3d portfolio website.a6598f51df9385f520a0.png",
     "static/media/groupProjectImage.png": "/static/media/groupProjectImage.49973a79fc83d5316aac.png",
     "static/media/bio-photo.JPG": "/static/media/bio-photo.5312b5a8a6ad9e272053.JPG",
     "static/media/groovehub - home.png": "/static/media/groovehub - home.5f4c48a555e44c561b86.png",
@@ -12,12 +13,12 @@
     "static/media/Resume.pdf": "/static/media/Resume.0c891f38a1c927ff2f4b.pdf",
     "static/media/profilephoto.jpeg": "/static/media/profilephoto.5acee8ff6df371183d95.jpeg",
     "index.html": "/index.html",
-    "main.0df84058.css.map": "/static/css/main.0df84058.css.map",
-    "main.76efcddc.js.map": "/static/js/main.76efcddc.js.map",
+    "main.b9634491.css.map": "/static/css/main.b9634491.css.map",
+    "main.73118324.js.map": "/static/js/main.73118324.js.map",
     "592.9525cf69.chunk.js.map": "/static/js/592.9525cf69.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0df84058.css",
-    "static/js/main.76efcddc.js"
+    "static/css/main.b9634491.css",
+    "static/js/main.73118324.js"
   ]
 }
